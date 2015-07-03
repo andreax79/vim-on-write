@@ -1,0 +1,42 @@
+*vimonwrite.txt*   Easily register commands executed on save
+
+		     VIM ON WRITE    by Andrea Bonomi
+
+==============================================================================
+CONTENTS
+
+    1. Description......................|vimonwrite-description|
+    2. Usage............................|vimonwrite-usage|
+
+==============================================================================
+DESCRIPTION					                          *vimonwrite-description*
+
+Easily register commands executed when the current buffer or a given file
+matching a glob are saved.
+
+==============================================================================
+USAGE						                                      *vimonwrite*
+
+:OnWrite <command>                                                  *:OnWrite*
+    Register a command executed when the current buffer is saved.
+    Only one command can be registered for a buffer.
+
+EXAMPLE:
+    The following comman copy the current file on the server when the buffer
+    is written.
+    :OnWrite scp % server:/tmp/
+
+:OnWriteGlob <glob> <command>                                   *:OnWriteGlob*
+    Register a command executed when a file matching the glob is saved.
+    Only one command can be registered for a glob, but a single file can
+    match multiple glob.
+
+EXAMPLE:
+    The following command copy the *.py files when are saved.
+    :OnWriteGlob *.py scp % server:/tmp/
+
+:CancelOnWrite [<glob>]                                       *:CancelOnWrite*
+    Remove the command triggered for the current buffer or a glob.
+
+==============================================================================
+ vim:tw=78:ts=8:ft=help:norl:

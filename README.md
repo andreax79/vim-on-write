@@ -1,7 +1,21 @@
 # vim-on-write
 Easily register commands executed when the current buffer or a given files matching a glob are saved
 
-**USAGE**
+## Installation
+This plugin follows the standard runtime path structure and it can be installed with a variety of plugin managers:
+
+* Vundle
+  * Add this line to your ~/.vimrc (or $HOME\vimfiles\.vimrc on Windows) configuration file:
+  * `Bundle 'andreax79/vim-on-write'`
+
+* Pathogen
+  * Go in your Vim bundle directory ~/.vim/bundle ($HOME\vimfiles\bundle on Windows) and execute the following commands:
+  * `git clone https://github.com/andreax79/vim-on-write`
+
+* Manual
+  * Copy all of the files into your `~/.vim` ($HOME\vimfiles on Windows) directory
+
+* Usage
 
 **:OnWrite < command >**
 

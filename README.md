@@ -9,7 +9,7 @@ This plugin follows the standard runtime path structure and it can be installed 
   * `Bundle 'andreax79/vim-on-write'`
 
 * Pathogen
-  * Go in your Vim bundle directory ~/.vim/bundle ($HOME\vimfiles\bundle on Windows) and execute the following commands:
+  * Go in your Vim bundle directory ~/.vim/bundle ($HOME\vimfiles\bundle on Windows) and execute the following command:
   * `git clone https://github.com/andreax79/vim-on-write`
 
 * Manual
@@ -24,7 +24,7 @@ This plugin follows the standard runtime path structure and it can be installed 
 
 *Example:*
 
-    The following comman copy the current file on the server when the buffer
+    The following command copy the current file on the server when the buffer
     is written.
     :OnWrite scp % server:/tmp/
 

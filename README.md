@@ -15,7 +15,7 @@ This plugin follows the standard runtime path structure and it can be installed 
 * Manual
   * Copy all of the files into your `~/.vim` ($HOME\vimfiles on Windows) directory
 
-* Usage
+## Usage
 
 **:OnWrite < command >**
 
